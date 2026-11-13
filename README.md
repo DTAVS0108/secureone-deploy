@@ -42,11 +42,17 @@ SecureOne, and fill in the database URL, Redis URL and an encryption key (`opens
 ## About this repository
 
 Hosting platforms read their templates from a public Git repository, so the templates live here on their own. This
-repository holds only the templates and this README: no source code and no secrets. Every template runs the
-published image `dmtavs0108/secureone:0.1.0`; a new SecureOne release updates the version here.
+repository holds only the templates, their icon, the Unraid maintainer profile (`ca_profile.xml`), this README and
+the licence: no source code and no secrets. Every template runs the published image `dmtavs0108/secureone:0.1.0`; a
+new SecureOne release updates the version here.
 
 ## Before going live
 
 - SecureOne needs an **https** address. The platforms above provide one. On Portainer and Unraid, put a reverse
   proxy with a certificate in front of the port.
 - Keep the encryption key with your backups, but not in the same place as the database backup.
+
+## Licence
+
+The template files in this repository are under the [MIT licence](LICENSE). SecureOne itself, the image they run,
+is free to use under the [SecureOne End User Licence Agreement](https://secureone-website.vercel.app/licence/).
